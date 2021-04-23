@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fff8eb;
+}
+
+header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 0.5rem;
+  background-color: #682c0e;
+  color: #f9e0ae;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-width: 0 0.5rem 0 0;
+  border-color: #f8ddd0;
+  border-style: solid;
+}
+.inderline{
+  display: inline-block;
+  width: 20rem;
+  height: 0.4rem;
+  background-color: #da8d00;
+}
+
+section {
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+  background-color: white;
+}
+
+.healthbar {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #fd8c4b;
+  margin: 1rem 0;
+  background: #d3cdc7;
+  border-radius: 1.5rem;
+}
+
+.healthbar_value {
+  background-color: #fc8621;
+  width: 50%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+.container {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+}
+
+#monster h2,
+#player h2 {
+  margin: 0.25rem;
+}
+
+#controls {
+  background-color: #fff8eb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font: inherit;
+  border: 1px solid #f9e0ae;
+  background-color: #c24914;
+  color: white;
+  padding: 1rem 2rem;
+  
+  margin: 1rem;
+  width: 15rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+  border-radius: 30px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background-color: #f9e0ae;
+  border-color: #c24914;
+  color: black;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.26);
+}
+
+button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  box-shadow: none;
+  color: #f4eee8;
+  cursor: not-allowed;
+  text-decoration: line-through;
+
+}
+
+#log ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#log li {
+  margin: 0.5rem 0;
+}
+
+.log--player {
+  color: #001aff;
+}
+
+.log--monster {
+  color: #da0000;
+}
+
+.log--damage {
+  color: rgb(255, 123, 0);
+}
+
+.log--heal {
+  color: green;
+}
+footer{
+  color: #682c0e;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+}
+footer div{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
