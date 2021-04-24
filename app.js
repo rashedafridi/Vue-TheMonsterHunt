@@ -1,9 +1,9 @@
 function hendelShack(element){
     if(element === 'hero' )
     {   console.log('hero')
-        document.getElementById('hero').classList.add('shake')
+        document.getElementById('hero').classList.add('shake2')
         setTimeout(() => {
-            document.getElementById('hero').classList.remove('shake')
+            document.getElementById('hero').classList.remove('shake2')
             console.log('hero remove')
         }, 100);
     }
